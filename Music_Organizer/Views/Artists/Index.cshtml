@@ -10,6 +10,14 @@
 {
   <h3>No artist have been added yet!</h3>
 } 
+else
+{
+  <form action="/artists/search" method="get">
+    <label for="search">Search for Artist:</label>
+    <input type="text" id="person" name="person">
+    <button type="submit">Find</button>
+  </form>
+}
 
 @foreach (Artist artist in Model)
 {
